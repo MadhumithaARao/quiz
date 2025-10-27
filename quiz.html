@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      padding: 20px;
+    }
+    .quiz-container {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Answer All Questions</h2>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What does HTML stand for?</p>
+        <input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+        <input type="radio" name="q1" value="b"> High Text Machine Language<br>
+        <input type="radio" name="q1" value="c"> Hyperlinks Text Management Language<br>
+        <input type="radio" name="q1" value="d"> None of these
+      </div>
+
+      <div class="question">
+        <p>2. Which of these is a JavaScript framework?</p>
+        <input type="radio" name="q2" value="a"> Django<br>
+        <input type="radio" name="q2" value="b"> React<br>
+        <input type="radio" name="q2" value="c"> Laravel<br>
+        <input type="radio" name="q2" value="d"> Flask
+      </div>
+
+      <div class="question">
+        <p>3. Which protocol is used for secure communication over the Internet?</p>
+        <input type="radio" name="q3" value="a"> HTTP<br>
+        <input type="radio" name="q3" value="b"> HTTPS<br>
+        <input type="radio" name="q3" value="c"> FTP<br>
+        <input type="radio" name="q3" value="d"> SMTP
+      </div>
+
+      <div class="question">
+        <p>4. Which data structure uses LIFO?</p>
+        <input type="radio" name="q4" value="a"> Queue<br>
+        <input type="radio" name="q4" value="b"> Stack<br>
+        <input type="radio" name="q4" value="c"> Tree<br>
+        <input type="radio" name="q4" value="d"> Graph
+      </div>
+
+      <div class="question">
+        <p>5. Which of the following is not a programming language?</p>
+        <input type="radio" name="q5" value="a"> Python<br>
+        <input type="radio" name="q5" value="b"> HTML<br>
+        <input type="radio" name="q5" value="c"> Java<br>
+        <input type="radio" name="q5" value="d"> C++
+      </div>
+    </form>
+<button onclick="window.location.href='thankyou.html'">Submit</button>
+  </div>
+</body>
+</html>
